@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Showcases-->
-    <form class="container mb-4 p-5" method="post" name="contact_form" action="contact-form-handler.php">
+    <form class="container mb-4 p-5" method="post" name="contact_form" action="contact.php">
         <!--Section heading-->
         <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5 py-5">Get in touch</h2>
     
@@ -56,20 +56,20 @@
             <div class="col-md-6 pb-5">
                 <div class="row">
                     <div class="col-md-6 pb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="col-md-6 pb-3">
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col pb-3">
-                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" required>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col pb-3">
-                        <textarea class="form-control" id="message" placeholder="How can i help you?"></textarea>
+                        <textarea class="form-control" id="message" name="message" placeholder="How can i help you?"></textarea>
                     </div>
                 </div>
                 <div class="row">
