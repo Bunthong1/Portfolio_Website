@@ -48,8 +48,7 @@
     </nav>
 
     <!-- Showcases-->
-    <form class="container mb-4 p-5" onsubmit="sendEmail(); reset(); return false;">
-
+    <form class="container mb-4 p-5" method="post" name="contact_form" action="contact-form-handler.php">
         <!--Section heading-->
         <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5 py-5">Get in touch</h2>
     
@@ -75,7 +74,7 @@
                 </div>
                 <div class="row">
                     <div class="col pb-3">
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-primary" >Send</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +85,7 @@
 
             </div>
         </div>
-    
+
     </form>
     
 
@@ -110,24 +109,6 @@
         </ul>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.mailtrap.io",
-            Username : "ffce0334cffc38",
-            Password : "c3eb2cd4a2ee3f",
-            To : "cheabunthong168@gmail.com",
-            From : document.getElementById("email").value,
-            Subject : "New Contact Form Enquiry",
-            Body : "Name: " + document.getElementById("name").value
-                 + "<br> Email: " + document.getElementById("email").value
-                 + "<br> Phone Number: " + document.getElementById("phone").value
-                 + "<br> Message: " + document.getElementById("message").value
-        }).then(
-        message => alert("Message send successfully")
-        );
-        }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
