@@ -122,6 +122,47 @@ footer .wave#wave2{
     }
 }
 
+.container:hover .card{
+    filter: blur(1px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container .card:hover{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+h2{
+    position: relative;
+    font-size: 14vw;
+    color: white;
+    -webkit-text-stroke: 0.1vw #0275d8;
+}
+
+h2::before{
+    position: absolute;
+    content: attr(data-text);
+    width: 0%;
+    height: 100%;
+    color: #0275d8;
+    -webkit-text-stroke: 0vw #0275d8;
+    border-right: 2px solid #0275d8;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%{
+        width: 0%;
+    }
+    70%{
+        width: 70%;
+    }
+}
+
 
 
 
