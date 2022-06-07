@@ -1,5 +1,4 @@
 <?php
-    $messageSent = false;
 
     if(isset($_POST['name']) && $_POST['name'] != ''){
 
@@ -20,7 +19,6 @@
 
             mail($to, $subject, $body);
 
-            $messageSent = true;
         }
     }
 
